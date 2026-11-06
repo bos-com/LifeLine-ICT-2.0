@@ -1,0 +1,11 @@
+﻿scenario,degradation_type,severity,expected_observations,received_records_including_duplicates,unique_observations_received,missing_unique_observations,completeness_percent,injected_duplicate_records,ground_truth_delayed_records
+missing_5pct,MISSING_OBSERVATIONS,{'percentage': 0.05},1000,950,950,50,95.0,0,0
+missing_10pct,MISSING_OBSERVATIONS,{'percentage': 0.1},1000,900,900,100,90.0,0,0
+missing_20pct,MISSING_OBSERVATIONS,{'percentage': 0.2},1000,800,800,200,80.0,0,0
+missing_40pct,MISSING_OBSERVATIONS,{'percentage': 0.4},1000,600,600,400,60.0,0,0
+delayed_1x,DELAYED_OBSERVATIONS,"{'multiplier': 1, 'delay_seconds': 300}",1000,1000,1000,0,100.0,0,0
+delayed_2x,DELAYED_OBSERVATIONS,"{'multiplier': 2, 'delay_seconds': 600}",1000,1000,1000,0,100.0,0,0
+delayed_5x,DELAYED_OBSERVATIONS,"{'multiplier': 5, 'delay_seconds': 1500}",1000,1000,1000,0,100.0,0,1000
+duplicates_1pct,DUPLICATE_TRANSMISSIONS,{'percentage': 0.01},1000,1010,1000,0,100.0,10,0
+duplicates_5pct,DUPLICATE_TRANSMISSIONS,{'percentage': 0.05},1000,1050,1000,0,100.0,50,0
+duplicates_10pct,DUPLICATE_TRANSMISSIONS,{'percentage': 0.1},1000,1100,1000,0,100.0,100,0

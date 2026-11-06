@@ -1,0 +1,11 @@
+﻿scenario,registered_sensor_assessments,active,overdue,no_data,expected_missing_reports,correctly_detected_missing_reports,false_positive_no_data,false_negative_no_data,missing_observation_percent,detection_rate_percent
+missing_5pct,1000,950,0,50,50,50,0,0,5.0,100.0
+missing_10pct,1000,900,0,100,100,100,0,0,10.0,100.0
+missing_20pct,1000,800,0,200,200,200,0,0,20.0,100.0
+missing_40pct,1000,600,0,400,400,400,0,0,40.0,100.0
+delayed_1x,1000,1000,0,0,0,0,0,0,0.0,
+delayed_2x,1000,1000,0,0,0,0,0,0,0.0,
+delayed_5x,1000,1000,0,0,0,0,0,0,0.0,
+duplicates_1pct,1000,1000,0,0,0,0,0,0,0.0,
+duplicates_5pct,1000,1000,0,0,0,0,0,0,0.0,
+duplicates_10pct,1000,1000,0,0,0,0,0,0,0.0,
