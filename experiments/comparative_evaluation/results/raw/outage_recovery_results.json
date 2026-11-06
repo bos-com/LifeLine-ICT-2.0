@@ -1,0 +1,53 @@
+{
+  "experiment_id": "sensor-outage-recovery-v1",
+  "workflow": "C_PROPOSED",
+  "component": "ai.common.monitoring.sensor_monitor",
+  "sensor_id": "RAIN-01",
+  "configuration": {
+    "report_interval_seconds": 300,
+    "timeout_seconds": 900,
+    "poll_interval_seconds": 60,
+    "recovery_report_at": "2025-01-01T00:40:30+00:00"
+  },
+  "timeline": [
+    {
+      "checked_at": "2025-01-01T00:00:00+00:00",
+      "status": "ACTIVE",
+      "seconds_since_last_seen": 0.0
+    },
+    {
+      "checked_at": "2025-01-01T00:16:00+00:00",
+      "status": "OVERDUE",
+      "seconds_since_last_seen": 960.0
+    },
+    {
+      "checked_at": "2025-01-01T00:41:00+00:00",
+      "status": "ACTIVE",
+      "seconds_since_last_seen": 30.0
+    }
+  ],
+  "metrics": {
+    "first_overdue_at": "2025-01-01T00:16:00+00:00",
+    "recovery_recognized_at": "2025-01-01T00:41:00+00:00",
+    "outage_detection_delay_seconds": 60.0,
+    "recovery_recognition_delay_seconds": 30.0,
+    "time_from_timeout_boundary_to_recovery_seconds": 1530.0
+  },
+  "comparison": {
+    "A_UNFILTERED": {
+      "outage_detection": null,
+      "recovery_recognition": null,
+      "interpretation": "Not implemented in this workflow."
+    },
+    "B_RULE_BASED": {
+      "outage_detection": null,
+      "recovery_recognition": null,
+      "interpretation": "No integrated sensor-health monitoring."
+    },
+    "C_PROPOSED": {
+      "outage_detection": 60.0,
+      "recovery_recognition": 30.0,
+      "interpretation": "Measured using the production sensor-monitoring component and simulated polling timeline."
+    }
+  }
+}

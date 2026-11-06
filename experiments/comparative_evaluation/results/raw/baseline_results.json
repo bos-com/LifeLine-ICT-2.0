@@ -1,0 +1,502 @@
+{
+  "experiment_id": "controlled-baseline-v1",
+  "dataset": "controlled_dataset.json",
+  "workflows": {
+    "A_UNFILTERED": {
+      "workflow": "A_UNFILTERED",
+      "records": [
+        {
+          "index": 0,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 1,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 2,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 3,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 4,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 5,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 6,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 7,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 8,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 9,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 10,
+          "status": "UNFILTERED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        }
+      ],
+      "input_count": 11,
+      "forwarded_count": 11
+    },
+    "B_RULE_BASED": {
+      "workflow": "B_RULE_BASED",
+      "records": [
+        {
+          "index": 0,
+          "status": "ACCEPTED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 1,
+          "status": "ACCEPTED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 2,
+          "status": "REJECTED",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "INVALID_RAINFALL_MM"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 3,
+          "status": "REJECTED",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "MISSING_RAINFALL_MM"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 4,
+          "status": "REJECTED",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "MISSING_OR_INVALID_OBSERVED_AT"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 5,
+          "status": "REJECTED",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "OBSERVATION_FROM_FUTURE"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 6,
+          "status": "FLAGGED",
+          "risk_eligible": false,
+          "forwarded": true,
+          "quality_flags": [
+            "DELAYED_OBSERVATION"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 7,
+          "status": "DUPLICATE",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "DUPLICATE_SENSOR_TIMESTAMP"
+          ],
+          "duplicate_of_index": 0
+        },
+        {
+          "index": 8,
+          "status": "FLAGGED",
+          "risk_eligible": false,
+          "forwarded": true,
+          "quality_flags": [
+            "SUSPICIOUSLY_HIGH_RAINFALL_MM"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 9,
+          "status": "FLAGGED",
+          "risk_eligible": false,
+          "forwarded": true,
+          "quality_flags": [
+            "UNREGISTERED_SENSOR"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 10,
+          "status": "REJECTED",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "MALFORMED_OBSERVATION"
+          ],
+          "duplicate_of_index": null
+        }
+      ],
+      "input_count": 11,
+      "forwarded_count": 5
+    },
+    "C_PROPOSED": {
+      "workflow": "C_PROPOSED",
+      "records": [
+        {
+          "index": 0,
+          "status": "ACCEPTED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 1,
+          "status": "ACCEPTED",
+          "risk_eligible": true,
+          "forwarded": true,
+          "quality_flags": [],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 2,
+          "status": "REJECTED",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "INVALID_RAINFALL_MM"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 3,
+          "status": "REJECTED",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "MISSING_RAINFALL_MM"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 4,
+          "status": "REJECTED",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "MISSING_OR_INVALID_OBSERVED_AT"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 5,
+          "status": "REJECTED",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "OBSERVATION_FROM_FUTURE"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 6,
+          "status": "FLAGGED",
+          "risk_eligible": false,
+          "forwarded": true,
+          "quality_flags": [
+            "DELAYED_OBSERVATION"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 7,
+          "status": "DUPLICATE",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "DUPLICATE_SENSOR_TIMESTAMP"
+          ],
+          "duplicate_of_index": 0
+        },
+        {
+          "index": 8,
+          "status": "FLAGGED",
+          "risk_eligible": false,
+          "forwarded": true,
+          "quality_flags": [
+            "SUSPICIOUSLY_HIGH_RAINFALL_MM"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 9,
+          "status": "FLAGGED",
+          "risk_eligible": false,
+          "forwarded": true,
+          "quality_flags": [
+            "UNREGISTERED_SENSOR"
+          ],
+          "duplicate_of_index": null
+        },
+        {
+          "index": 10,
+          "status": "REJECTED",
+          "risk_eligible": false,
+          "forwarded": false,
+          "quality_flags": [
+            "MALFORMED_OBSERVATION"
+          ],
+          "duplicate_of_index": null
+        }
+      ],
+      "input_count": 11,
+      "forwarded_count": 5,
+      "pipeline_output": {
+        "received_at": "2025-01-01T12:00:00+00:00",
+        "input_count": 11,
+        "outcome_counts": {
+          "ACCEPTED": 2,
+          "FLAGGED": 3,
+          "REJECTED": 5,
+          "DUPLICATE": 1
+        },
+        "eligible_observation_count": 2,
+        "records": [
+          {
+            "index": 0,
+            "status": "ACCEPTED",
+            "sensor_id": "RAIN-01",
+            "observed_at": "2025-01-01T11:50:00+00:00",
+            "quality_flags": [],
+            "explanation": "The observation passed the configured quality checks.",
+            "duplicate_of_index": null,
+            "risk_eligible": true
+          },
+          {
+            "index": 1,
+            "status": "ACCEPTED",
+            "sensor_id": "RAIN-02",
+            "observed_at": "2025-01-01T11:52:00+00:00",
+            "quality_flags": [],
+            "explanation": "The observation passed the configured quality checks.",
+            "duplicate_of_index": null,
+            "risk_eligible": true
+          },
+          {
+            "index": 2,
+            "status": "REJECTED",
+            "sensor_id": "RAIN-01",
+            "observed_at": "2025-01-01T11:54:00+00:00",
+            "quality_flags": [
+              "INVALID_RAINFALL_MM"
+            ],
+            "explanation": "One or more blocking validation checks failed.",
+            "duplicate_of_index": null
+          },
+          {
+            "index": 3,
+            "status": "REJECTED",
+            "sensor_id": "RAIN-02",
+            "observed_at": "2025-01-01T11:55:00+00:00",
+            "quality_flags": [
+              "MISSING_RAINFALL_MM"
+            ],
+            "explanation": "One or more blocking validation checks failed.",
+            "duplicate_of_index": null
+          },
+          {
+            "index": 4,
+            "status": "REJECTED",
+            "sensor_id": "RAIN-01",
+            "observed_at": "not-a-timestamp",
+            "quality_flags": [
+              "MISSING_OR_INVALID_OBSERVED_AT"
+            ],
+            "explanation": "One or more blocking validation checks failed.",
+            "duplicate_of_index": null
+          },
+          {
+            "index": 5,
+            "status": "REJECTED",
+            "sensor_id": "RAIN-02",
+            "observed_at": "2025-01-01T12:05:00+00:00",
+            "quality_flags": [
+              "OBSERVATION_FROM_FUTURE"
+            ],
+            "explanation": "One or more blocking validation checks failed.",
+            "duplicate_of_index": null
+          },
+          {
+            "index": 6,
+            "status": "FLAGGED",
+            "sensor_id": "RAIN-01",
+            "observed_at": "2025-01-01T11:30:00+00:00",
+            "quality_flags": [
+              "DELAYED_OBSERVATION"
+            ],
+            "explanation": "The observation passed basic validation but has quality warnings.",
+            "duplicate_of_index": null,
+            "risk_eligible": false
+          },
+          {
+            "index": 7,
+            "status": "DUPLICATE",
+            "sensor_id": "RAIN-01",
+            "observed_at": "2025-01-01T11:50:00+00:00",
+            "quality_flags": [
+              "DUPLICATE_SENSOR_TIMESTAMP"
+            ],
+            "explanation": "Duplicate of observation at input index 0.",
+            "duplicate_of_index": 0
+          },
+          {
+            "index": 8,
+            "status": "FLAGGED",
+            "sensor_id": "RAIN-02",
+            "observed_at": "2025-01-01T11:56:00+00:00",
+            "quality_flags": [
+              "SUSPICIOUSLY_HIGH_RAINFALL_MM"
+            ],
+            "explanation": "The observation passed basic validation but has quality warnings.",
+            "duplicate_of_index": null,
+            "risk_eligible": false
+          },
+          {
+            "index": 9,
+            "status": "FLAGGED",
+            "sensor_id": "RAIN-99",
+            "observed_at": "2025-01-01T11:57:00+00:00",
+            "quality_flags": [
+              "UNREGISTERED_SENSOR"
+            ],
+            "explanation": "Observation passed basic validation but its sensor ID is not registered.",
+            "duplicate_of_index": null,
+            "risk_eligible": false
+          },
+          {
+            "index": 10,
+            "status": "REJECTED",
+            "sensor_id": null,
+            "observed_at": null,
+            "quality_flags": [
+              "MALFORMED_OBSERVATION"
+            ],
+            "explanation": "Observation must be a mapping.",
+            "duplicate_of_index": null
+          }
+        ],
+        "sensor_statuses": [
+          {
+            "sensor_id": "RAIN-01",
+            "status": "ACTIVE",
+            "last_seen_at": "2025-01-01T12:00:00+00:00",
+            "seconds_since_last_seen": 0.0,
+            "timeout_seconds": 900.0,
+            "explanation": "The sensor reported within the configured timeout."
+          },
+          {
+            "sensor_id": "RAIN-02",
+            "status": "ACTIVE",
+            "last_seen_at": "2025-01-01T12:00:00+00:00",
+            "seconds_since_last_seen": 0.0,
+            "timeout_seconds": 900.0,
+            "explanation": "The sensor reported within the configured timeout."
+          }
+        ],
+        "deduplication": {
+          "candidate_count": 6,
+          "unique_count": 5,
+          "duplicate_count": 1
+        },
+        "flood_risk": {
+          "status": "INSUFFICIENT_DATA",
+          "risk_level": "UNKNOWN",
+          "daily_rainfall_mm": null,
+          "three_day_rainfall_mm": null,
+          "daily_threshold_exceeded": null,
+          "three_day_threshold_exceeded": null,
+          "quality_flags": [
+            "MISSING_DAILY_RAINFALL_MM",
+            "MISSING_THREE_DAY_RAINFALL_MM"
+          ],
+          "explanation": "Risk classification withheld because one or more rainfall measurements are missing or invalid."
+        },
+        "policy": {
+          "include_flagged_in_risk": false,
+          "rainfall_summaries_aggregated_by_pipeline": false
+        }
+      }
+    }
+  }
+}
